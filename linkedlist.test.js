@@ -37,6 +37,9 @@ describe("Testing a linked list", () => {
         expect(linkedlist.head).toEqual(node2)
         linkedlist.addToEnd(7)
         expect(linkedlist.head).toEqual(node3)
+
+        // Aditional expects
+        expect(linkedlist.addToEnd).toBeDefined()
     })
 
     it("Remove a value from the end", () => {
@@ -67,6 +70,9 @@ describe("Testing a linked list", () => {
         expect(linkedlist.head).toEqual(node)
         linkedlist.removeEnd()
         expect(linkedlist.head).toBe(null)
+
+        // Aditional expects
+        expect(linkedlist.removeEnd).toBeDefined()
     })
 
     it("Add a value at the beginning", () => {
@@ -104,6 +110,9 @@ describe("Testing a linked list", () => {
         expect(linkedlist.head).toEqual(node2)
         linkedlist.addToStart(3)
         expect(linkedlist.head).toEqual(node3)
+
+        // Aditional expects
+        expect(linkedlist.addToStart).toBeDefined()
     })
 
 
@@ -135,6 +144,9 @@ describe("Testing a linked list", () => {
         expect(linkedlist.head).toEqual(node)
         linkedlist.removeStart()
         expect(linkedlist.head).toBe(null)
+
+        // Aditional expects
+        expect(linkedlist.removeStart).toBeDefined()
     })
 
 
@@ -195,6 +207,9 @@ describe("Testing a linked list", () => {
         linkedlist.addToMiddle("middle3")
         expect(linkedlist.head).toEqual(node3)
 
+        // Aditional expects
+        expect(linkedlist.addToMiddle).toBeDefined()
+
     })
 
 
@@ -249,6 +264,9 @@ describe("Testing a linked list", () => {
         expect(linkedlist.head).toEqual(nodo2)
         linkedlist.removeMiddle()
         expect(linkedlist.head).toEqual(nodo)
+
+        // Aditional expects
+        expect(linkedlist.removeMiddle).toBeDefined()
     })
 
 
@@ -280,6 +298,8 @@ describe("Testing a linked list", () => {
         // Test the sort list method
         linkedlist.sortList()
         expect(linkedlist.head).toEqual(nodo)
+        // Aditional expects
+        expect(linkedlist.sortList).toBeDefined()
     })
 
 
@@ -348,6 +368,9 @@ describe("Testing a linked list", () => {
         // Test the reverse method and validates with an already sorted list
         linkedlistSorted.reverseList()
         expect(linkedlistSorted.head).toEqual(nodeSortedReversed)
+
+        // Aditional expects
+        expect(linkedlist.reverseList).toBeDefined()
 
     })
 
