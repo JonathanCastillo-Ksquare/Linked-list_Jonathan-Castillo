@@ -1,0 +1,23 @@
+{
+  "name": "linked-list_jonathan-castillo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JonathanCastillo-Ksquare/Linked-list_Jonathan-Castillo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JonathanCastillo-Ksquare/Linked-list_Jonathan-Castillo/issues"
+  },
+  "homepage": "https://github.com/JonathanCastillo-Ksquare/Linked-list_Jonathan-Castillo#readme",
+  "devDependencies": {
+    "jest": "^29.2.2"
+  }
+}
