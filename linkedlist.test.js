@@ -312,9 +312,42 @@ describe("Testing a linked list", () => {
             }
         };
 
-        // Test the reverse list method
+        /* Order the list chech the reverse */
+
+
+        // Test the reverse (bigger to lower)list method
         linkedlist.reverseList()
         expect(linkedlist.head).toEqual(nodo)
+
+        /*-------------- Order the list chech the reverse ------------- */
+        let linkedlistSorted = new modulo.Linkedlist();
+
+        // Add nodes to the list so we can remove some of them from the middle of the list
+        linkedlistSorted.addToEnd(5)
+        linkedlistSorted.addToEnd(8)
+        linkedlistSorted.addToEnd(3)
+        linkedlistSorted.addToEnd(9)
+        // This will sort the list from bigger to lower
+        linkedlistSorted.sortList()
+
+        const nodeSortedReversed = {
+            data: 3,
+            next: {
+                data: 5,
+                next: {
+                    data: 8,
+                    next: {
+                        data: 9,
+                        next: null
+                    }
+                }
+            }
+
+        };
+
+        // Test the reverse method and validates with an already sorted list
+        linkedlistSorted.reverseList()
+        expect(linkedlistSorted.head).toEqual(nodeSortedReversed)
 
     })
 
